@@ -26,6 +26,13 @@ namespace Calculator
                 myMath math = new myMath();
                 Assert.AreEqual(31, math.Add(111, 20));
             }
+
+            [TestCase]
+            public void Validate()
+            {
+                myMath math = new myMath();
+                Assert.IsNotInstanceOf<int>(math.Add(111, 20));
+            }
         }
     }
 }
