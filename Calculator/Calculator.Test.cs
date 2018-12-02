@@ -21,7 +21,7 @@ namespace Calculator
             }
 
             [TestCase]
-            public void Add_()
+            public void Add_negetive()
             {
                 myMath math = new myMath();
                 Assert.AreEqual(31, math.Add(111, 20));
